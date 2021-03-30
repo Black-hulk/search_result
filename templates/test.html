@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table class="table table-bordered">
+        <thead class="alert-info">
+            <tr>
+                <th>Search Time</th>
+                <th>Search Keyword</th>
+                <th>Search Result</th>
+                
+            </tr>
+        </thead>
+        <tbody>
+            {% for re in record %}
+            <tr>
+                
+                <td>{{ re.stime }}</td>
+                <td>{{ re.skeyword }}</td>
+                <td>{{ re.sresult }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>
